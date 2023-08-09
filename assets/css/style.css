@@ -1,0 +1,184 @@
+* {
+margin: 0; padding: 0;
+box-sizing: border-box;
+font-family: Raleway, Helvetica, sans-serif;
+text-decoration: none;
+text-transform: capitalize;
+}
+
+body {
+/* min-height: 100vh;
+/* background: url() no-repeat; */
+/* background-color: #2e3141; */
+/* background-color: rgb(151, 151, 151);
+background-size:cover ;
+background-position: center;  */
+}
+
+header {
+position: fixed;
+top: 0; left: 0; right: 0;
+background: rgba(53,56,73,.95);
+box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+/* padding: 0px 12%; */
+padding-top: .5%;
+padding-bottom: .5%;
+display: flex;
+align-items: center;
+justify-content: absolute;
+z-index: 500;
+}
+
+header ul {
+list-style: none;
+display: block;
+margin: 0;
+padding: 0;
+margin-bottom: 3%;
+}
+
+header .navbar ul li {
+position: relative;
+float: left;
+display: block;
+width: auto;
+
+}
+
+header .navbar ul li  a{ 
+font-size: 20px;
+padding: 5px;
+color: #ffffff;
+display: block;
+margin-left: 3rem;
+width: auto;
+}
+
+header .navbar ul li ul {
+position: absolute;
+left: 0;
+background: #45558d;
+display: none;
+margin: 0;
+padding: 0;
+}
+
+header .navbar ul li #mission li a {
+margin: 0;
+padding: 0;
+padding: 5px 45px;
+width: 400px;
+}
+
+header .navbar ul li #programs li a {
+margin: 0;
+padding: 0;
+padding: 5px 45px;
+width: 800px;
+}
+header .navbar ul li #programs li {
+    width: 400px;
+}
+header .navbar ul li #others1 li a {
+
+margin: 0;
+padding: 0;
+padding: 5px 45px;
+width: 600px;
+}
+
+
+header .navbar ul li ul li {
+
+border-top: 1px solid rgba(0,0,0,.1);
+
+} 
+header .navbar ul li ul li a{
+font-size: 10px;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+display: initial;
+margin: 0;
+padding: 0;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px){
+    header{
+        padding:20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header  .navbar{
+        position: absolute;
+        top: 100%; left:0; right: 0;
+        background:#242121 ;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+    header  .navbar ul li {
+        width: 100%;
+        text-indent: -30px;
+    }
+
+    header  .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    } 
+
+    header  .navbar ul li ul li{
+        background: #242121;
+        text-indent: 10px;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+
+
+.org-container img {
+   margin-left:  3rem ;
+   margin-right: 3rem;
+}
+
+
+
+
+
+#program {
+/* margin-right: 2rem; */
+/* text-align: center; */
+/* width: auto; */
+}
+
+
+
+header .navbar ul li ul li a:hover {
+background-color: rgba(136, 136, 138, 0.953)
+}
+/* 
+.box {
+    padding: 25px;
+    background-color: black;
+    width: 30%;
+    text-align: center;
+}
+
+.box a img {
+    text-align: center;
+} */
